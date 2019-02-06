@@ -1,0 +1,402 @@
+html {
+   /* =10px*/
+   font-size: 62.5%;
+   height: 100%;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: #f7f7f7;
+   font-family: "Roboto", sans-serif;
+   margin: 0;
+   height: 100%;
+}
+
+.removeElement {
+   display: none;
+}
+
+/* TYPOGRAPHY CLASSES */
+
+.effect3D {
+   color: rgba(252, 13, 27, 0.85);
+   text-shadow: 0.045em 0.045em #56CCF2;
+   line-height: normal;
+   font-weight: bold;
+}
+
+.effectSling {
+   color: rgba(252, 13, 27, 0.85);
+   text-shadow: 0em 0.08em rgba(86, 204, 242, 1),
+      0em -0.33em rgba(86, 204, 242, 0.9), 0em -0.66em rgba(86, 204, 242, 0.8),
+      0em -0.99em rgba(86, 204, 242, 0.7), 0em -1.32em rgba(86, 204, 242, 0.6),
+      0em -1.66em rgba(86, 204, 242, 0.5), 0em -1.98em rgba(86, 204, 242, 0.4),
+      0em -2.31em rgba(86, 204, 242, 0.3), 0em -2.64em rgba(86, 204, 242, 0.2),
+      0em -2.97em rgba(86, 204, 242, 0.1);
+   line-height: normal;
+   font-weight: bold;
+}
+
+#vocabText {
+   padding-top: 22%;
+   text-align: center;
+}
+
+.body1 {
+   font-weight: 500;
+   font-size: 72px;
+   font-size: 7.2rem;
+   margin-top: 96px;
+   margin-bottom: 96px;
+   line-height: 1.4em;
+}
+
+.body2 {
+   font-weight: 300;
+   font-style: normal;
+   line-height: normal;
+   font-size: 64px;
+   font-size: 6.4rem;
+   color: #000000;
+}
+
+.body3 {
+   font-style: normal;
+   font-weight: 300;
+   line-height: 2em;
+   font-size: 24px;
+   font-size: 2.4em;
+}
+
+/* CONTAINERS */
+
+#leftAlignContainer {
+   background-color: white;
+   display: block;
+   text-align: left;
+   padding: 100px;
+}
+
+#leftAlignContainer strong {
+   margin-left: 36px;
+   font-weight: 400;
+}
+
+.vocabContainer,
+.exampleContainer {
+   display: inline-flex;
+   text-align: left;
+   margin-bottom: 75px;
+}
+
+#headerContainer {
+   /* text-align: center; */
+   /* position: initial; */
+   height: 75%;
+   /* z-index: -1; */
+}
+
+.stick {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+}
+
+.margin50Left {
+   margin-left: 50px;
+   margin-left: 5rem;
+}
+
+.margin50Right {
+   margin-right: 50px;
+   margin-right: 5rem;
+}
+
+.margin96Left {
+   margin-left: 96px;
+   margin-left: 9.6rem;
+}
+
+.btnArrowContainer {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+}
+
+/* ELEMENTS */
+
+#headerContainer h1 {
+   /* Multiple Browser Support  */
+   font-size: 144px;
+   font-size: 14.4rem;
+   text-align: center;
+   margin: 0;
+   margin-top: 9%;
+   vertical-align: middle;
+}
+
+#menuItems {
+   display: inline-table;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: 0.5s ease-in-out;
+   -moz-transition: 0.5s ease-in-out;
+   -o-transition: 0.5s ease-in-out;
+   transition: 0.5s ease-in-out;
+}
+
+#menuItems.open {
+   visibility: visible;
+   opacity: 1;
+}
+
+#menuItems h4 {
+   display: table-cell;
+   vertical-align: middle;
+   padding-left: 2.5em;
+   color: rgba(252, 13, 27, 0.85);
+   line-height: normal;
+   font-weight: bold;
+   font-size: 2.4rem;
+   cursor: pointer;
+   -webkit-transition: 0.25s ease-in-out;
+   -moz-transition: 0.25s ease-in-out;
+   -o-transition: 0.25s ease-in-out;
+   transition: 0.25s ease-in-out;
+}
+
+#menuItems h4:hover {
+   text-shadow: 0.05em 0.05em #56CCF2;
+}
+
+h2 {
+   font-size: 96px;
+   font-size: 9.6rem;
+   margin: 0px;
+}
+
+a {
+   text-decoration: none;
+}
+
+#exampleTitle {
+   text-align: center;
+}
+
+#exampleTitle h2 {
+   font-weight: 500;
+   letter-spacing: 0.5rem;
+   text-shadow: 0.04em 0.04em #DADADA;
+}
+
+#exampleTitle span {
+   letter-spacing: 4rem;
+}
+
+/* LAYERED TEXT*/
+.textLayerContainer {
+   display: flex;
+}
+
+.textLayerContainer div {
+   text-align: left;
+   font-size: 96px;
+   font-size: 9.6rem;
+   margin-left: 164px;
+}
+
+.bottomTextLayer {
+   position: absolute;
+   z-index: 1;
+   color: #56CCF2;
+   font-style: normal;
+   font-weight: bold;
+   line-height: normal;
+   letter-spacing: 0.12em;
+   text-transform: uppercase;
+}
+
+.topTextLayer {
+   position: relative;
+   z-index: 2;
+   font-style: normal;
+   font-weight: bold;
+   line-height: normal;
+   letter-spacing: 0.12em;
+   color: rgba(252, 13, 27, 0.8);
+   text-transform: uppercase;
+}
+
+/* EXAMPLE FONT BLOCKS */
+
+#timesNewRoman {
+   font-family: 'Times New Roman', Times, serif;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 6.6rem;
+   font-size: 48px;
+   font-size: 4.8rem;
+}
+
+#nunitoSans {
+   font-family: 'Nunito Sans', sans-serif;
+   font-style: normal;
+   font-weight: 200;
+   line-height: 8.7rem;
+   font-size: 36px;
+   font-size: 3.6rem;
+   letter-spacing: 0.1em;
+}
+
+#sourceCodePro {
+   font-family: 'Source Code Pro', monospace;
+   font-weight: bold;
+   line-height: 7.7rem;
+   font-size: 40px;
+   font-size: 4.0rem;
+}
+
+/* BUTTON MECANICS */
+
+button {
+   color: #fc0d1b;
+   background-color: none;
+   height: 2em;
+   width: 13.5em;
+   border-radius: 1em;
+   border: 0.15em solid #fc0d1b;
+   outline: 0;
+   letter-spacing: 0.02em;
+   font-size: 48px;
+   font-size: 4.8rem;
+   font-weight: 500;
+   text-align: center;
+   cursor: pointer;
+   /* -webkit-transition-duration: 0.1s;
+   transition-duration: 0.1s; */
+}
+
+button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+
+button span:after {
+   content: "\00bb";
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -0.5em;
+   transition: 0.5s;
+}
+
+button:hover span {
+   padding-right: 0.75em;
+}
+
+button:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+
+button:active {
+   background-color: rgba(252, 13, 27);
+   color: white;
+   -webkit-transition-duration: 0.1s;
+   transition-duration: 0.1s;
+}
+
+.btn-arrow {
+   height: 100px;
+   width: 100px;
+   border: none;
+   border-radius: 0em;
+}
+
+/* Animated Hamburger Icon Retrieved from 
+https://codepen.io/designcouch/pen/Atyop*/
+
+#nav-icon {
+   width: 53.33px;
+   height: 40px;
+   display: inline-flex;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 23.5px;
+   margin-right: 23.5px;
+   /* For compatibility reasons */
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: 0.5s ease-in-out;
+   -moz-transition: 0.5s ease-in-out;
+   -o-transition: 0.5s ease-in-out;
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
+}
+
+#nav-icon span {
+   /* display: block; */
+   position: absolute;
+   height: 9px;
+   width: 100%;
+   background: #fc0d1b;
+   border-radius: 9px;
+   opacity: 1;
+   left: 0;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: 0.25s ease-in-out;
+   -moz-transition: 0.25s ease-in-out;
+   -o-transition: 0.25s ease-in-out;
+   transition: 0.25s ease-in-out;
+}
+
+#nav-icon:hover {
+   background-color: rgb(238, 236, 236);
+   /* border-radius: px; */
+}
+
+#nav-icon span:nth-child(1) {
+   top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+   top: 18px;
+}
+
+#nav-icon span:nth-child(4) {
+   top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+   top: 18px;
+   width: 0%;
+   left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+   top: 18px;
+   width: 0%;
+   left: 50%;
+}

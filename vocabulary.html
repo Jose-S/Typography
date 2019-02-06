@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Typography Vocabulary</title>
+   <!-- Roboto Font -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i" rel="stylesheet" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+   <!-- <article> -->
+   <div id="headerContainer" onscroll="changeScrollButton()">
+      <div>
+         <div id="nav-icon">
+            <span></span> <span></span> <span></span> <span></span>
+         </div>
+         <div id="menuItems">
+            <a href="index.html">
+               <h4>Home</h4>
+            </a>
+            <a href="example.html">
+               <h4>Examples</h4>
+            </a>
+            <a href="vocabulary.html">
+               <h4>Vocabulary</h4>
+            </a>
+         </div>
+      </div>
+      <h2 id="vocabText" class="effectSling">Vocabulary</h2>
+   </div>
+   <!-- </article> -->
+
+   <article>
+      <div class="btnArrowContainer">
+         <button class="btn-arrow">
+            <i id="downArrow" class="fas fa-arrow-down"></i>
+            <i id="upArrow" class="fas fa-arrow-up removeElement"></i>
+         </button>
+      </div>
+      <div id="leftAlignContainer">
+         <div class="vocabContainer">
+            <div class="margin50Right">
+               <h2>Typeface</h2>
+               <p class="body2">Refers to a group <br>
+                  of characters, such as letters, numbers,
+                  & punctuation that share a
+                  common
+                  design/style.</p>
+            </div>
+            <div class="margin50Left">
+               <h2>Font</h2>
+               <p class="body2">Refer to the means by which
+                  typefaces are displayed or presented</p>
+            </div>
+         </div>
+
+         <div class="vocabContainer">
+            <img src="images/serif_type.svg">
+            <p class="body3 margin50Left">Recognizable by the small lines at the end of character
+               strokes. These lines make a typeface easier to read by guiding the eye.</p>
+         </div>
+         <div class="vocabContainer">
+            <img src="images/sans_type.svg">
+            <p class="body3 margin50Left">These typefaces do not have serif lines. The lack of
+               serifs makes these fonts easier to read on screen. Often
+               used on digital text.</p>
+         </div>
+         <div class="vocabContainer">
+            <img src="images/script_type.svg">
+            <p class="body3 margin50Left">These types are designed to suggest informality,
+               as if they were written quickly. Many times they
+               appear to have been drawn with a brush. </p>
+         </div>
+         <div style="text-align: center;">
+            <a href="index.html">
+               <button><span>Learn Typography</span></button>
+            </a>
+         </div>
+      </div>
+   </article>
+
+   <script src="javascript/index.js"></script>
+</body>
+
+</html>
