@@ -400,3 +400,93 @@ https://codepen.io/designcouch/pen/Atyop*/
    width: 0%;
    left: 50%;
 }
+
+/* RESPONSIVE CONTENT CLASSES */
+.mobileScreen {
+   display: none;
+}
+
+.webScreen {
+   display: inline-block;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+   button {
+
+      height: 2em;
+      width: 8.5em;
+      border-radius: 1.75em;
+      font-size: 24px;
+      font-size: 2.4rem;
+      font-weight: 500;
+   }
+
+   .webScreen {
+      display: none;
+   }
+
+   .mobileScreen {
+      display: inline-block;
+   }
+
+   #headerContainer h1 {
+      /* Multiple Browser Support  */
+      font-size: 72px;
+      font-size: 7.2rem;
+      text-align: left;
+      margin: 75px;
+      margin-top: 9%;
+   }
+
+   h2 {
+      font-size: 48px;
+      font-size: 4.8rem;
+      margin: 0px;
+   }
+
+   .body1 {
+
+      font-size: 32px;
+      font-size: 3.2rem;
+      margin-top: 64px;
+      margin-bottom: 64px;
+      line-height: 1.4em;
+   }
+
+   .btn-arrow {
+      height: 75px;
+      width: 75px;
+   }
+
+   #leftAlignContainer {
+      padding: 75px;
+   }
+
+   /* NAV ICON */
+
+   #nav-icon {
+      width: 42.66px;
+      height: 32px;
+
+   }
+
+   #nav-icon span {
+      height: 7.2px;
+      border-radius: 7.2px;
+   }
+
+   #nav-icon span:nth-child(1) {
+      top: 0px;
+   }
+
+   #nav-icon span:nth-child(2),
+   #nav-icon span:nth-child(3) {
+      top: 14px;
+   }
+
+   #nav-icon span:nth-child(4) {
+      top: 28px;
+   }
+}
