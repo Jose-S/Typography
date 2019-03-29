@@ -227,6 +227,19 @@ a {
    text-transform: uppercase;
 }
 
+.fontExampleDetails {
+   font-size: 18px;
+   font-size: 1.8rem;
+   margin-left: 0px;
+   line-height: 1.8em;
+   margin-bottom: 32px;
+}
+
+#leftAlignContainer strong {
+   margin-left: 36px;
+   font-weight: 400;
+}
+
 /* EXAMPLE FONT BLOCKS */
 
 #timesNewRoman {
@@ -446,6 +459,10 @@ https://codepen.io/designcouch/pen/Atyop*/
       margin: 0px;
    }
 
+   #exampleTitle span {
+      letter-spacing: 0.05rem;
+   }
+
    .body1 {
 
       font-size: 32px;
@@ -455,6 +472,21 @@ https://codepen.io/designcouch/pen/Atyop*/
       line-height: 1.4em;
    }
 
+   .exampleContainer img {
+      width: 125px;
+      margin-top: 48px;
+   }
+
+   .vocabContainer,
+   .exampleContainer {
+      display: inline;
+   }
+
+   .margin96Left {
+      margin-left: 0px;
+      margin-left: 0rem;
+   }
+
    .btn-arrow {
       height: 75px;
       width: 75px;
@@ -462,6 +494,41 @@ https://codepen.io/designcouch/pen/Atyop*/
 
    #leftAlignContainer {
       padding: 75px;
+   }
+
+   .textLayerContainer div {
+      text-align: left;
+      font-size: 48px;
+      font-size: 4.8rem;
+      margin-left: 32px;
+   }
+
+   #leftAlignContainer strong {
+      margin-left: 0px;
+      font-weight: 400;
+   }
+
+   /* FONT EXAMPLES */
+
+   #timesNewRoman {
+      line-height: 6.6rem;
+      font-size: 32px;
+      font-size: 3.2rem;
+   }
+
+   #nunitoSans {
+      line-height: 5rem;
+      font-size: 28px;
+      font-size: 2.8rem;
+      letter-spacing: 0.1em;
+   }
+
+   #sourceCodePro {
+      font-family: 'Source Code Pro', monospace;
+      font-weight: bold;
+      line-height: 4.5rem;
+      font-size: 32px;
+      font-size: 3.2rem;
    }
 
    /* NAV ICON */

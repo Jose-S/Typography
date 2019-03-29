@@ -7,8 +7,8 @@
    <title>Typography Examples</title>
    <!-- Roboto Font -->
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i" rel="stylesheet" />
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200|Source+Code+Pro:700" rel="stylesheet" />
    <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -62,9 +62,12 @@
       </div>
       <div id="leftAlignContainer">
          <div id="exampleTitle">
-            <h2><span>////</span>examples <span>////</span></h2>
+            <h2>
+               <span class="webScreen">////<span>examples </span>////</span>
+               <span class="mobileScreen">examples</span>
+            </h2>
          </div>
-         <div class="exampleContainer">
+         <div class=" exampleContainer">
             <img src="images/bullet_1.svg" />
             <div class="margin96Left">
                <p id="timesNewRoman">
@@ -72,10 +75,19 @@
                   it she had left the ground.
                </p>
                <div class="body3">
-                  <strong style="margin-left:0px;">Typeface:</strong> Times New
-                  Roman <strong>Weight:</strong> Regular<br />
-                  <strong style="margin-left:0px;">Size:</strong> 48 pt
-                  <strong>Leading:</strong> 30pt<strong>Tracking:</strong> 25
+                  <span class="webScreen">
+                     <strong style="margin-left:0px;">Typeface:</strong> Times New
+                     Roman <strong>Weight:</strong> Regular<br />
+                     <strong style="margin-left:0px;">Size:</strong> 48 pt
+                     <strong>Leading:</strong> 30pt<strong>Tracking:</strong> 25
+                  </span>
+                  <span class="fontExampleDetails mobileScreen">
+                     <strong>Typeface:</strong> Times New Roman<br />
+                     <strong>Weight:</strong> Regular<br />
+                     <strong>Size:</strong> 32 pt <br />
+                     <strong>Leading:</strong> 30pt <br />
+                     <strong>Tracking:</strong> 25
+                  </span>
                </div>
             </div>
          </div>
@@ -87,10 +99,19 @@
                   it she had left the ground.
                </p>
                <div class="body3">
-                  <strong style="margin-left:0px;">Typeface:</strong> Nunito Sans
-                  <strong>Weight:</strong> Thin<br />
-                  <strong style="margin-left:0px;">Size:</strong> 36 pt
-                  <strong>Leading:</strong> 45pt<strong>Tracking:</strong> 25
+                  <span class="webScreen">
+                     <strong style="margin-left:0px;">Typeface:</strong> Nunito Sans
+                     <strong>Weight:</strong> Thin<br />
+                     <strong style="margin-left:0px;">Size:</strong> 36 pt
+                     <strong>Leading:</strong> 45pt<strong>Tracking:</strong> 25
+                  </span>
+                  <span class="fontExampleDetails mobileScreen">
+                     <strong>Typeface:</strong> Nunito Sans<br />
+                     <strong>Weight:</strong> Thin<br />
+                     <strong>Size:</strong> 28 pt <br />
+                     <strong>Leading:</strong> 20pt <br />
+                     <strong>Tracking:</strong> 25
+                  </span>
                </div>
             </div>
          </div>
@@ -101,17 +122,29 @@
                   She stared through the window at the stars. Almost before she knew
                   it she had left the ground.
                </p>
-               <div class="body3">
-                  <strong style="margin-left:0px;">Typeface:</strong> Source Code
-                  Pro <strong>Weight:</strong> Bold<br />
-                  <strong style="margin-left:0px;">Size:</strong> 40 pt
-                  <strong>Leading:</strong> 40pt<strong>Tracking:</strong> 35
-               </div>
+               <span class="webScreen">
+                  <div class="body3">
+                     <strong style="margin-left:0px;">Typeface:</strong> Source Code
+                     Pro <strong>Weight:</strong> Bold<br />
+                     <strong style="margin-left:0px;">Size:</strong> 40 pt
+                     <strong>Leading:</strong> 40pt<strong>Tracking:</strong> 35
+                  </div>
+               </span>
+               <span class="fontExampleDetails mobileScreen">
+                  <strong>Typeface:</strong> Nunito Sans<br />
+                  <strong>Weight:</strong> Thin<br />
+                  <strong>Size:</strong> 28 pt <br />
+                  <strong>Leading:</strong> 20pt <br />
+                  <strong>Tracking:</strong> 25
+               </span>
             </div>
          </div>
          <div style="text-align: center;">
             <a href="vocabulary.html">
-               <button><span>Learn Type Vocabulary</span></button>
+               <button>
+                  <span class="webScreen">Learn Type Vocabulary</span>
+                  <span class="mobileScreen">Vocabulary</span>
+               </button>
             </a>
          </div>
       </div>
