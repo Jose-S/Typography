@@ -235,11 +235,6 @@ a {
    margin-bottom: 32px;
 }
 
-#leftAlignContainer strong {
-   margin-left: 36px;
-   font-weight: 400;
-}
-
 /* EXAMPLE FONT BLOCKS */
 
 #timesNewRoman {
@@ -511,6 +506,7 @@ https://codepen.io/designcouch/pen/Atyop*/
 
    #leftAlignContainer {
       padding: 75px;
+      padding-top: 85px;
    }
 
    .textLayerContainer div {
