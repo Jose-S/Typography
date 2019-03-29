@@ -16,6 +16,19 @@ body {
    display: none;
 }
 
+/* RESPONSIVE CONTENT CLASSES */
+.mobileScreen {
+   display: none;
+}
+
+.tabletScreen {
+   display: none;
+}
+
+.webScreen {
+   display: inline-block;
+}
+
 /* TYPOGRAPHY CLASSES */
 
 .effect3D {
@@ -121,6 +134,10 @@ body {
    position: -webkit-sticky;
    position: sticky;
    top: 0;
+}
+
+#layeredTextExample {
+   margin-top: -4%;
 }
 
 /* ELEMENTS */
@@ -409,20 +426,8 @@ https://codepen.io/designcouch/pen/Atyop*/
    left: 50%;
 }
 
-/* RESPONSIVE CONTENT CLASSES */
-.mobileScreen {
-   display: none;
-}
-
-.tabletScreen {
-   display: none;
-}
-
-.webScreen {
-   display: inline-block;
-}
-
 /* MEDIA QUERIES */
+
 @media only screen and (max-width: 1024px) {
 
    .webScreen {
@@ -437,25 +442,38 @@ https://codepen.io/designcouch/pen/Atyop*/
       display: none;
    }
 
-   .btnArrowContainer button {
-      margin-top: 0px;
-   }
-
-   button {
-
-      height: 2em;
-      width: 12.5em;
-      border-radius: 1.75em;
-      font-size: 40px;
-      font-size: 4rem;
-      font-weight: 500;
-      outline: 0;
-      margin-top: 32px;
-   }
+   /* TYPOGRAPHY CLASSES */
 
    .body1 {
       font-size: 64px;
       font-size: 6.4rem;
+   }
+
+   #exampleTitle span {
+      letter-spacing: 1rem;
+   }
+
+   #headerContainer h1 {
+      font-size: 128px;
+      font-size: 12.8rem;
+      margin: auto;
+      margin-top: 25%;
+   }
+
+   #vocabText {
+      padding-top: 30%;
+      text-align: center;
+   }
+
+   .textLayerContainer div {
+      font-size: 84px;
+      font-size: 8.4rem;
+   }
+
+   /* CONTAINERS */
+
+   .btnArrowContainer button {
+      margin-top: 0px;
    }
 
    #leftAlignContainer {
@@ -481,35 +499,20 @@ https://codepen.io/designcouch/pen/Atyop*/
    }
 
    #layeredTextExample {
-      margin-top: 7%;
+      margin-top: 0%;
    }
 
-   h2 {
-      font-size: 82px;
-      font-size: 8.2rem;
-      margin: 0px;
-   }
+   /* ELEMENTS */
+   button {
 
-   #exampleTitle span {
-      letter-spacing: 1rem;
-   }
-
-   #headerContainer h1 {
-      font-size: 128px;
-      font-size: 12.8rem;
-      margin: auto;
-      margin-top: 25%;
-   }
-
-   h2 {
-      font-size: 96px;
-      font-size: 9.6rem;
-      margin: 0px;
-   }
-
-   #vocabText {
-      padding-top: 50%;
-      text-align: center;
+      height: 2em;
+      width: 12.5em;
+      border-radius: 1.75em;
+      font-size: 40px;
+      font-size: 4rem;
+      font-weight: 500;
+      outline: 0;
+      margin-top: 32px;
    }
 }
 
@@ -520,19 +523,16 @@ https://codepen.io/designcouch/pen/Atyop*/
       font-size: 82px;
       font-size: 8.2rem;
    }
+
+   h2 {
+      font-size: 82px;
+      font-size: 8.2rem;
+      margin: 0px;
+   }
+
 }
 
 @media only screen and (max-width: 640px) {
-   button {
-
-      height: 2em;
-      width: 8.5em;
-      border-radius: 1.75em;
-      font-size: 24px;
-      font-size: 2.4rem;
-      font-weight: 500;
-      outline: 0;
-   }
 
    .webScreen {
       display: none;
@@ -546,6 +546,8 @@ https://codepen.io/designcouch/pen/Atyop*/
       display: inline-block;
    }
 
+   /* TYPOGRAPHY */
+
    #headerContainer h1 {
       /* Multiple Browser Support  */
       font-size: 72px;
@@ -555,18 +557,10 @@ https://codepen.io/designcouch/pen/Atyop*/
       margin-top: 9%;
    }
 
-   #layeredTextExample {
-      margin-top: 10%;
-   }
-
    h2 {
       font-size: 48px;
       font-size: 4.8rem;
       margin: 0px;
-   }
-
-   #exampleTitle span {
-      letter-spacing: 0.05rem;
    }
 
    .body1 {
@@ -583,30 +577,15 @@ https://codepen.io/designcouch/pen/Atyop*/
       font-size: 3.2rem;
    }
 
-   .margin50Right {
-      margin-right: 0px;
-      margin-right: 0rem;
-   }
+   /* CONTAINERS */
 
-   .exampleContainer img {
-      width: 125px;
-      margin-top: 48px;
-   }
-
-   .vocabContainer img {
-      width: 250px;
-      margin-top: 32px;
+   #layeredTextExample {
+      margin-top: 10%;
    }
 
    .vocabContainer,
    .exampleContainer {
       display: inline;
-   }
-
-   .margin96Left,
-   .margin50Left {
-      margin-left: 0px;
-      margin-left: 0rem;
    }
 
    .btn-arrow {
@@ -626,9 +605,17 @@ https://codepen.io/designcouch/pen/Atyop*/
       margin-left: 32px;
    }
 
-   #leftAlignContainer strong {
+   /* VALUES */
+
+   .margin96Left,
+   .margin50Left {
       margin-left: 0px;
-      font-weight: 400;
+      margin-left: 0rem;
+   }
+
+   .margin50Right {
+      margin-right: 0px;
+      margin-right: 0rem;
    }
 
    /* FONT EXAMPLES */
@@ -654,6 +641,27 @@ https://codepen.io/designcouch/pen/Atyop*/
       font-size: 3.2rem;
    }
 
+   /* ELEMENTS */
+
+   #exampleTitle span {
+      letter-spacing: 0.05rem;
+   }
+
+   .exampleContainer img {
+      width: 125px;
+      margin-top: 48px;
+   }
+
+   .vocabContainer img {
+      width: 250px;
+      margin-top: 32px;
+   }
+
+   #leftAlignContainer strong {
+      margin-left: 0px;
+      font-weight: 400;
+   }
+
    #menuItems h4 {
       text-align: center;
       display: block;
@@ -661,6 +669,17 @@ https://codepen.io/designcouch/pen/Atyop*/
       margin: 0;
       margin-bottom: 0.75rem;
       font-size: 2rem;
+   }
+
+   button {
+
+      height: 2em;
+      width: 8.5em;
+      border-radius: 1.75em;
+      font-size: 24px;
+      font-size: 2.4rem;
+      font-weight: 500;
+      outline: 0;
    }
 
    /* NAV ICON */
