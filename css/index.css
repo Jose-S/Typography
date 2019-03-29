@@ -434,6 +434,7 @@ https://codepen.io/designcouch/pen/Atyop*/
       font-size: 24px;
       font-size: 2.4rem;
       font-weight: 500;
+      outline: 0;
    }
 
    .webScreen {
@@ -472,9 +473,24 @@ https://codepen.io/designcouch/pen/Atyop*/
       line-height: 1.4em;
    }
 
+   .body2 {
+      font-size: 32px;
+      font-size: 3.2rem;
+   }
+
+   .margin50Right {
+      margin-right: 0px;
+      margin-right: 0rem;
+   }
+
    .exampleContainer img {
       width: 125px;
       margin-top: 48px;
+   }
+
+   .vocabContainer img {
+      width: 250px;
+      margin-top: 32px;
    }
 
    .vocabContainer,
@@ -482,7 +498,8 @@ https://codepen.io/designcouch/pen/Atyop*/
       display: inline;
    }
 
-   .margin96Left {
+   .margin96Left,
+   .margin50Left {
       margin-left: 0px;
       margin-left: 0rem;
    }
