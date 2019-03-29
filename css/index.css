@@ -414,13 +414,111 @@ https://codepen.io/designcouch/pen/Atyop*/
    display: none;
 }
 
+.tabletScreen {
+   display: none;
+}
+
 .webScreen {
    display: inline-block;
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
 
-@media only screen and (max-width: 600px) {
+   .webScreen {
+      display: none;
+   }
+
+   .tabletScreen {
+      display: inline-block;
+   }
+
+   .mobileScreen {
+      display: none;
+   }
+
+   button {
+
+      height: 2em;
+      width: 12.5em;
+      border-radius: 1.75em;
+      font-size: 40px;
+      font-size: 4rem;
+      font-weight: 500;
+      outline: 0;
+      margin-top: 32px;
+   }
+
+   .body1 {
+      font-size: 64px;
+      font-size: 6.4rem;
+   }
+
+   #leftAlignContainer {
+      padding-top: 225px;
+   }
+
+   .exampleContainer img {
+      width: 150px;
+   }
+
+   .vocabContainer img {
+      margin-top: 32px;
+   }
+
+   .vocabContainer {
+      display: inline;
+   }
+
+   .margin50Left {
+      margin-left: 0px;
+      margin-left: 0rem' 
+
+   }
+
+   #layeredTextExample {
+      margin-top: 7%;
+   }
+
+   h2 {
+      font-size: 82px;
+      font-size: 8.2rem;
+      margin: 0px;
+   }
+
+   #exampleTitle span {
+      letter-spacing: 1rem;
+   }
+
+   #headerContainer h1 {
+      font-size: 128px;
+      font-size: 12.8rem;
+      margin: auto;
+      margin-top: 25%;
+   }
+
+   h2 {
+      font-size: 96px;
+      font-size: 9.6rem;
+      margin: 0px;
+   }
+
+   #vocabText {
+      padding-top: 50%;
+      text-align: center;
+   }
+}
+
+/* FOR IPAD */
+@media only screen and (max-width: 768px) {
+   .textLayerContainer div {
+      text-align: left;
+      font-size: 82px;
+      font-size: 8.2rem;
+   }
+}
+
+@media only screen and (max-width: 640px) {
    button {
 
       height: 2em;
@@ -436,6 +534,10 @@ https://codepen.io/designcouch/pen/Atyop*/
       display: none;
    }
 
+   .tabletScreen {
+      display: none;
+   }
+
    .mobileScreen {
       display: inline-block;
    }
@@ -447,6 +549,10 @@ https://codepen.io/designcouch/pen/Atyop*/
       text-align: left;
       margin: 75px;
       margin-top: 9%;
+   }
+
+   #layeredTextExample {
+      margin-top: 10%;
    }
 
    h2 {
@@ -542,6 +648,15 @@ https://codepen.io/designcouch/pen/Atyop*/
       line-height: 4.5rem;
       font-size: 32px;
       font-size: 3.2rem;
+   }
+
+   #menuItems h4 {
+      text-align: center;
+      display: block;
+      padding-left: 30%;
+      margin: 0;
+      margin-bottom: 0.75rem;
+      font-size: 2rem;
    }
 
    /* NAV ICON */
